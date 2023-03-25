@@ -27,3 +27,14 @@ Outliers can have several negative impacts on machine learning models, including
    Outliers can also reduce the generalization of a model, making it less applicable to new data.
 
 It is therefore important to detect and handle outliers appropriately in order to ensure the accuracy and validity of machine learning models.
+
+## Method of Visiualizing the Outliers:
+There are several types of plots that can be used to detect outliers in a dataset, including:
+- Box plots
+- Scatter plots
+- Histograms
+- QQ plots
+- Violin plots
+
+
+
