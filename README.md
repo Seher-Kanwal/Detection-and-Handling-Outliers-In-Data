@@ -36,5 +36,23 @@ There are several types of plots that can be used to detect outliers in a datase
 - QQ plots
 - Violin plots
 
+# Methods for handling and detecting the Outliers:
+## Z-Score:
+![image](https://user-images.githubusercontent.com/92606737/227702235-4736459f-ea95-4453-b40d-429eae0a4760.png)
 
+The Z-score method is a statistical technique for detecting outliers in a dataset. The method involves calculating the Z-score for each data point, which is the number of standard deviations the data point is away from the mean of the dataset. Mathematically, the Z-score of a data point x is given by:
+
+Z-score = (x - mean) / standard deviation
+
+where "mean" is the mean value of the dataset and "standard deviation" is the standard deviation of the dataset.
+
+Once the Z-scores have been calculated, data points with a Z-score above a certain threshold (often 3 or -3) are considered outliers. A Z-score of 3 means that the data point is three standard deviations away from the mean, which is a highly unlikely event in a normally distributed dataset.
+
+### Handling using Z-Score:
+To handle outliers using the Z-score method, 
+- Trimming (you can simply remove the data points with Z-scores above the threshold)
+- Capping (replace them with a more reasonable value)
+
+#### Assumption 
+Z-score method assumes that the dataset follows a normal distribution, and may not work well for datasets with other types of distributions. Additionally, the Z-score method may not work well for datasets with a small number of data points, as the mean and standard deviation may not be representative of the data.
 
