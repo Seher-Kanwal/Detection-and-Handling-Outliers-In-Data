@@ -46,7 +46,7 @@ There are several types of plots that can be used to detect outliers in a datase
    Capping involves setting a maximum or minimum value for the data points in the dataset. Data points that exceed the maximum or minimum value are replaced with the maximum or minimum value, respectively. For example, if the maximum value for a dataset is capped at 100, any data points above 100 would be replaced with 100. This can be an effective method for handling outliers that are due to extreme values that are still relevant to the analysis.
    
    
-### Colculsion:
+### Conclusion:
 
 Both trimming and capping can be useful techniques for handling outliers in a dataset, but they should be used with caution. Removing or capping data points can alter the distribution and range of the dataset, and may lead to biased or inaccurate results in statistical analysis. Additionally, these techniques may not be appropriate for all datasets or types of analysis, and their use should be based on careful consideration of the underlying data and research question.
 
@@ -84,4 +84,5 @@ To use the IQR method to remove outliers, we first calculate Q1, Q3, and IQR for
 #### Assumption
 The IQR method is a robust method for identifying and removing outliers that does not assume any particular distribution of the data. It is also relatively easy to implement and does not require any assumptions about the underlying distribution of the data.
 
+#### Conclusion
 However, the IQR method can be quite conservative in identifying outliers, especially in datasets with a small number of observations. In addition, the threshold value used to define outliers is somewhat arbitrary and can be adjusted based on the specific needs of the analysis. Finally, the IQR method may not be appropriate for all datasets and may need to be supplemented with other techniques for identifying and handling outliers.
