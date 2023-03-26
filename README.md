@@ -36,6 +36,21 @@ There are several types of plots that can be used to detect outliers in a datase
 - QQ plots
 - Violin plots
 
+# 2 Methods for Dealing with Outliers:
+- ## Trimming 
+
+    Trimming involves removing a certain percentage of data points from the dataset, typically at the extremes of the distribution. For example, if 5% of the data points are to be trimmed from each end of the distribution, the top 5% and bottom 5% of data points would be removed. This can be an effective method for reducing the impact of outliers on statistical analysis, particularly if the outliers are suspected to be due to measurement error or other factors that are not relevant to the analysis.
+    
+- ## Capping 
+
+   Capping involves setting a maximum or minimum value for the data points in the dataset. Data points that exceed the maximum or minimum value are replaced with the maximum or minimum value, respectively. For example, if the maximum value for a dataset is capped at 100, any data points above 100 would be replaced with 100. This can be an effective method for handling outliers that are due to extreme values that are still relevant to the analysis.
+   
+   
+### Colculsion:
+
+Both trimming and capping can be useful techniques for handling outliers in a dataset, but they should be used with caution. Removing or capping data points can alter the distribution and range of the dataset, and may lead to biased or inaccurate results in statistical analysis. Additionally, these techniques may not be appropriate for all datasets or types of analysis, and their use should be based on careful consideration of the underlying data and research question.
+
+
 # Methods for handling and detecting the Outliers:
 ## Z-Score:
 ![image](https://user-images.githubusercontent.com/92606737/227702235-4736459f-ea95-4453-b40d-429eae0a4760.png)
