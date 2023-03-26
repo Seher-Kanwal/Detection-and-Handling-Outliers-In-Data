@@ -71,3 +71,17 @@ To handle outliers using the Z-score method,
 #### Assumption 
 Z-score method assumes that the dataset follows a normal distribution, and may not work well for datasets with other types of distributions. Additionally, the Z-score method may not work well for datasets with a small number of data points, as the mean and standard deviation may not be representative of the data.
 
+# IQR (Interquartile Range)
+![image](https://user-images.githubusercontent.com/92606737/227759238-a234d7bf-58d7-425d-86f9-04b9ca70e8de.png)
+
+- This is used mostly when the data is not distributed normally.
+
+
+The IQR (Interquartile Range) method is a technique for identifying and removing outliers from a dataset. It is based on the quartiles of the dataset and the concept of the interquartile range, which is the difference between the third quartile (Q3) and the first quartile (Q1).
+
+To use the IQR method to remove outliers, we first calculate Q1, Q3, and IQR for the dataset. Then, we define a threshold value, typically 1.5 times the IQR, above and below which data points are considered to be outliers. Any data points that fall outside of this range are considered outliers and can be removed from the dataset.
+
+#### Assumption
+The IQR method is a robust method for identifying and removing outliers that does not assume any particular distribution of the data. It is also relatively easy to implement and does not require any assumptions about the underlying distribution of the data.
+
+However, the IQR method can be quite conservative in identifying outliers, especially in datasets with a small number of observations. In addition, the threshold value used to define outliers is somewhat arbitrary and can be adjusted based on the specific needs of the analysis. Finally, the IQR method may not be appropriate for all datasets and may need to be supplemented with other techniques for identifying and handling outliers.
