@@ -87,5 +87,3 @@ The IQR method is a robust method for identifying and removing outliers that doe
 #### Conclusion
 However, the IQR method can be quite conservative in identifying outliers, especially in datasets with a small number of observations. In addition, the threshold value used to define outliers is somewhat arbitrary and can be adjusted based on the specific needs of the analysis. Finally, the IQR method may not be appropriate for all datasets and may need to be supplemented with other techniques for identifying and handling outliers.
 
-
-
